@@ -90,23 +90,23 @@ session_start();
                      <h5 class="modal-title">Lote</h5>
                 </div>
 
-                <form class="kpx_loginForm" action="processa_irrigacao.php" autocomplete="off" method="POST">
+                <form class="kpx_loginForm" action="processa_lote.php" autocomplete="off" method="POST">
                     <div class="form-group">
                         <input type="text" class="form-control" name="nome_lote" id="nome_lote" placeholder="Nome do Lote"  required="required">
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                        <input type="text" class="form-control" name="area_irrigacao_m3" id="area_irrigacao_m3" placeholder="Área de Irrigação(m²)">
+                        <input type="number" class="form-control" name="area_irrigacao_m3" id="area_irrigacao_m3" placeholder="Área de Irrigação(m²)">
                         </div>
                         <?php include "select.php"?>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="qtd_irrigadores" placeholder="Quantidade de Irrigadores">
+                        <input type="number" class="form-control" name="qtd_irrigadores" id="qtd_irrigadores" placeholder="Quantidade de Irrigadores">
                         </div>
 
-                        <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="hr_irrigacao" placeholder="Horário de Irrigação" required="required">
+                        <div class="form-group col-md-6" >
+                        <input style ="align=center" class="form-control" type="time" name="hr_irrigacao" id="hr_irrigacao" required><small>Digite o Horário de Irrigamento</small>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Salvar</button>
@@ -116,15 +116,6 @@ session_start();
 
 
             </div>
-            <h4>
-        <?php
-        
-        if(isset($_SESSION['msg'])){
-        echo $_SESSION['msg'];
-        unset($_SESSION['msg']);
-      }
-        ?>
-      </h4>
        </div>
     </div>   
 </div>

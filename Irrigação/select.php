@@ -9,7 +9,7 @@ $resultado = mysqli_query($conn,$areas_plantio);
 </head>
 <body>
 
-  <div class="form-group col-md-4">
+  <div class="form-group col-md-6">
      
         <select name="area_plantio" id="area_plantio" class="form-control" required>
         <option value="">Escolher...</option>

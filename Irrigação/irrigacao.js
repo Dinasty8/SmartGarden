@@ -1,9 +1,9 @@
 function desfavoritar0() {
-    document.getElementById("favorit0").src = "Imgs/off.png";
+    document.getElementById("favorit0").src = "../Imgs/off.png";
 }
 
 function favoritar0() {
-    document.getElementById("favorit0").src = "Imgs/on.png";
+    document.getElementById("favorit0").src = "../Imgs/on.png";
 }
 
 // **********************************************************
