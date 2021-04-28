@@ -15,9 +15,16 @@ class Paginas extends ControladorCore {
             header("Location:".BASE_URL."/produtos");
 
         } else {
-            $this->addTituloPagina("Página Inicial");
+            $this->addTituloPagina("Smart Garden");
             $this->carregarPagina("home");
         }
+    }
+
+    public function forgot() {
+       
+        $this->addTituloPagina("Recuperar Senha");
+       $this->carregarPagina("forgot");
+       
     }
 
     public function produtos() {
@@ -37,15 +44,24 @@ class Paginas extends ControladorCore {
     }
     
     public function sobre() {
+        if (!$this->estaLogado()) {
+            header("Location:".BASE_URL);
+
+        } else {
         //echo __CLASS__." - ".__FUNCTION__;
         $usuarios = (new UsuarioDao())->listarTudo();
-        var_dump($usuarios);
+        print_r($usuarios);
+        }
     }
 
-    public function opa() {
-        $this->addTituloPagina("Opa");
-       $this->carregarPagina("opa");
-       
+    public function irrigacao() {
+        if (!$this->estaLogado()) {
+            header("Location:".BASE_URL);
+
+        } else {
+        $this->addTituloPagina("Irrigação");
+       $this->carregarPagina("irrigacao");
+        }
     }
 
     public function erro404() {

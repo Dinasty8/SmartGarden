@@ -51,7 +51,7 @@
       
         <input type="text" name="usuario" placeholder="E-mail" />
         <input id="password" name="senha" type="password" placeholder="Senha" required />
-        <a href="./forgot.html">Esqueceu sua senha?</a>
+        <a href="<?=BASE_URL."/forgot"?>">Esqueceu sua senha?</a>
         <div class="login" style="margin-top: 15px;">
           <button type="submit" style="color: black;">Login</button>
         </div>

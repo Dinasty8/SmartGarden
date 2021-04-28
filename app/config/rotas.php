@@ -30,10 +30,16 @@ $rotas["sobre"] = array(
     "metodo"=>"sobre"
 );
 
-$rotas["opa"] = array(
-    "rota"=>"/opa", 
+$rotas["irrigacao"] = array(
+    "rota"=>"/irrigacao", 
     "controller"=>"App\\Controllers\\Paginas", 
-    "metodo"=>"opa"
+    "metodo"=>"irrigacao"
+);
+
+$rotas["forgot"] = array(
+    "rota"=>"/forgot", 
+    "controller"=>"App\\Controllers\\Paginas", 
+    "metodo"=>"forgot"
 );
 
 $rotas["produtos"] = array(
