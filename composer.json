@@ -1,0 +1,16 @@
+{
+    "name": "backend/login-sessao",
+    "description": "Projeto exemplo de login com sessão",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app",
+            "App\\Controllers\\": "app/controllers",
+            "App\\Models\\": "app/models",
+            "App\\Models\\DB\\": "app/models/dao",
+            "App\\Config\\": "app/config"
+        },
+        "files": [
+            "app/config/banco.php"
+        ]
+    }
+}
