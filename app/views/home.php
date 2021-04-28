@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href=<?=PATH_CSS."/style.css"?>>
-  <link rel="icon" type="imagem/png" href="./img/icone.jpg" />
+  <link rel="icon" type="imagem/png" href=<?=PATH_ASSETS."/icone.jpg"?> />
   <title>Smart Garden</title>
 </head>
 
@@ -15,7 +15,7 @@
   <div class="container" id="container">
 
     <div class="form-container sign-up-container">
-      <form action="<?=BASE_URL."/entrar"?>" method="POST">
+      <form action="<?=BASE_URL."/opa"?>" method="POST">
         <h1>CRIAR CONTA</h1>
         <div class="social-container">
           <!-- <a href="#" class="face"><i class="fab fa-facebook-f"></i></a>

@@ -39,6 +39,12 @@ class Autenticacao extends ControladorCore {
         }
     }
 
+    public function cadastrar() {
+       
+        echo "oiiiii";
+
+    }
+
     public function logout() {
         if ($this->estaLogado()) {
             $this->deslogarUsuario();

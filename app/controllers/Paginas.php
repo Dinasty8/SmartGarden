@@ -42,6 +42,12 @@ class Paginas extends ControladorCore {
         var_dump($usuarios);
     }
 
+    public function opa() {
+        $this->addTituloPagina("Opa");
+       $this->carregarPagina("opa");
+       
+    }
+
     public function erro404() {
         $this->addTituloPagina("Página não encontrada");
         $this->carregarPagina("erro404");

@@ -30,12 +30,22 @@ $rotas["sobre"] = array(
     "metodo"=>"sobre"
 );
 
+$rotas["opa"] = array(
+    "rota"=>"/opa", 
+    "controller"=>"App\\Controllers\\Paginas", 
+    "metodo"=>"opa"
+);
+
 $rotas["produtos"] = array(
     "rota"=>"/produtos", 
     "controller"=>"App\\Controllers\\Paginas", 
     "metodo"=>"produtos"
 );
-
+// $rotas["cadastrar"] = array(
+//     "rota"=>"/cadastrar", 
+//     "controller"=>"App\\Controllers\\Autenticacao", 
+//     "metodo"=>"cadastrar"
+// );
 $rotas["entrar"] = array(
     "rota"=>"/entrar", 
     "controller"=>"App\\Controllers\\Autenticacao", 

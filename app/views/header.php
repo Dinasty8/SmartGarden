@@ -6,7 +6,7 @@
 
         <title><?=$dadosView['tituloPagina'] ?? "MVC"?></title>
         
-        <link rel="stylesheet" href="<?=BASE_URL."/css/bootstrap.css"?>">
+        <link rel="stylesheet" href="<?=PATH_CSS."/bootstrap.css"?>">
     </head>
     <body>
         <div class="container-fluid">

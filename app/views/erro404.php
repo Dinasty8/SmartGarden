@@ -1,1 +1,1 @@
-<h1>Erro 404 - Página não encontrada!!!!!</h1>
+<h1 class="text-danger">Erro 404 - Página não encontrada!!!!!</h1>
