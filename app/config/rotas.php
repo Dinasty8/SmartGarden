@@ -42,10 +42,10 @@ $rotas["forgot"] = array(
     "metodo"=>"forgot"
 );
 
-$rotas["produtos"] = array(
-    "rota"=>"/produtos", 
+$rotas["irrigacao"] = array(
+    "rota"=>"/irrigacao", 
     "controller"=>"App\\Controllers\\Paginas", 
-    "metodo"=>"produtos"
+    "metodo"=>"irrigacao"
 );
 $rotas["cadastrar"] = array(
     "rota"=>"/cadastrar", 

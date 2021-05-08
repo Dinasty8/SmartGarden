@@ -4,13 +4,24 @@ body {
 
 .fazend {
     text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.548);
+    box-shadow: inset 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.548);
+    border-radius: 25px;
+    font-size: 35px;
+    background-color: gray;
+    padding: 5px;
+
 }
 
+
 .button-add {
+    text-align: right;
     font-size: 25px;
-    width: 130px;
     border-radius: 15px;
-    background-color: white;
+}
+
+.btn {
+    border-radius: 25px;
+    box-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.548);
 }
 
 .salvar {
