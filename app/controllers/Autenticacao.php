@@ -14,11 +14,11 @@ class Autenticacao extends ControladorCore {
         } else {
             if (!empty($_POST['usuario']) && !empty($_POST['senha'])) {
 
-                $login = $_POST['usuario'];
+                $email = $_POST['usuario'];
                 $senha = $_POST['senha'];
 
                 $uDao = new UsuarioDao();
-                $usuarioObj = $uDao->login($login, $senha);
+                $usuarioObj = $uDao->login($email, $senha);
 
                 if (!empty($usuarioObj)) {
                     

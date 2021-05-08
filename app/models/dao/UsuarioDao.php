@@ -9,12 +9,12 @@ class UsuarioDao extends Dao {
         parent::__construct();
     }
 
-    public function login($login, $senha) {
+    public function login($email, $senha) {
         try {
-            $sql = "SELECT * FROM cadastros WHERE nome = ? AND senha = ?";
+            $sql = "SELECT * FROM cadastros WHERE email = ? AND senha = ?";
             
             $req = $this->pdo->prepare($sql);
-            $req->execute([$login, $senha]);
+            $req->execute([$email, $senha]);
 
             $resultado = $req->fetch(\PDO::FETCH_ASSOC);
 
