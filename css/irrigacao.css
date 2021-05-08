@@ -1,0 +1,47 @@
+body {
+  background: #eee;
+}
+
+.box h3 {
+  margin: 5px;
+
+}
+
+.button-add {
+  font-size: 25px;
+  width: 130px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.salvar {
+  margin: 15px 0px 15px 0px;
+}
+
+span {
+  font-size: 15px;
+}
+
+.box {
+  padding: 30px 0px;
+}
+
+.card {
+  border-radius: 25px;
+}
+
+
+.favoritar {
+  width: 25px;
+  height: 25px;
+  margin-top: -6px;
+  margin-left: 10px;
+}
+
+.text {
+  margin: 20px 0px;
+}
+
+.fa {
+  color: #4183d7;
+}

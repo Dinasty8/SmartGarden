@@ -52,6 +52,12 @@ $rotas["cadastrar"] = array(
     "controller"=>"App\\Controllers\\Autenticacao", 
     "metodo"=>"cadastrar"
 );
+$rotas["cadastrarLote"] = array(
+    "rota"=>"/cadastrarLote", 
+    "controller"=>"App\\Controllers\\Autenticacao", 
+    "metodo"=>"cadastrarLote"
+);
+
 $rotas["entrar"] = array(
     "rota"=>"/entrar", 
     "controller"=>"App\\Controllers\\Autenticacao", 

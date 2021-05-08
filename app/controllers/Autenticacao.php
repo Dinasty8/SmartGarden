@@ -62,6 +62,31 @@ class Autenticacao extends ControladorCore {
                 $_SESSION['erro'] = "Informe todos os campos obrigatórios";
             }  
         }
+
+        public function cadastrarLote(){
+            if (!empty($_POST['nome_lote']) && !empty($_POST['area_irrigacao_m3'])&& !empty($_POST['area_plantio'])&& !empty($_POST['qtd_irrigadores'])
+            && !empty($_POST['hr_irrigacao'])) {
+
+            $servidor = "localhost";
+            $usuario = "root";
+            $senha = "";
+            $dbname = "projetfinal";
+
+            $conn = mysqli_connect($servidor,$usuario,$senha,$dbname);
+
+            $lote = $_POST["nome_lote"] ?? null;
+            $area_irrig = $_POST["area_irrigacao_m3"] ?? null;
+            $area_plantio = $_POST["area_plantio"] ?? null;
+            $qtd_irrig = $_POST["qtd_irrigadores"] ?? null;
+            $hr_irrig = $_POST["hr_irrigacao"] ?? null;
+
+
+
+            $sql = "INSERT INTO lotes (nome_lote,area_irrigacao_m3,select_area_plantio,qtd_irrigadores,hr_irrigacao,created)
+             VALUES ('$lote','$area_irrig','$area_plantio','$qtd_irrig','$hr_irrig',NOW())";
+            $req = mysqli_query($conn,$sql);
+            }
+        }
     
 
    

@@ -12,6 +12,8 @@ define("PATH_CSS",BASE_URL."/css/");
 
 define("PATH_JS",BASE_URL."/js/");
 
+define("PATH_CONTROLLERS",BASE_URL."/controllers/");
+
 define("PATH_ASSETS",BASE_URL."/assets/");
 
 
