@@ -1,3 +1,5 @@
+<link rel="stylesheet"  href="<?=PATH_CSS."/irriga.css"?>" />
+</head>
 <body style="background-image:url(<?=PATH_ASSETS.'arvore.jpg'?>);height: 100vh;">
   
   <div class="container text-center">
