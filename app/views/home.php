@@ -15,7 +15,7 @@
   <div class="container" id="container">
 
     <div class="form-container sign-up-container">
-      <form action="<?=BASE_URL."/opa"?>" method="POST">
+      <form action="<?=BASE_URL."/cadastrar"?>" method="POST">
         <h1>CRIAR CONTA</h1>
         <div class="social-container">
           <!-- <a href="#" class="face"><i class="fab fa-facebook-f"></i></a>

@@ -37,13 +37,34 @@ class Autenticacao extends ControladorCore {
             }
             header("Location:".BASE_URL);
         }
-    }
+    }  
+        public function cadastrar() {
+            if (!empty($_POST['name']) && !empty($_POST['email'])&& !empty($_POST['senha'])) {
 
-    public function cadastrar() {
-       
-        echo "oiiiii";
+                $servidor = "localhost";
+                $usuario = "root";
+                $senha = "";
+                $dbname = "projetfinal";
 
-    }
+                $conn = mysqli_connect($servidor,$usuario,$senha,$dbname);
+
+
+                $lgn = $_POST["name"] ?? null;
+                $email = $_POST["email"] ?? null;
+                $pass = $_POST["senha"] ?? null;
+                
+                $sql = "INSERT INTO cadastros (nome,email,senha,created) VALUES ('$lgn','$email','$pass',NOW())";
+                $req = mysqli_query($conn,$sql);
+                header("Location:".BASE_URL);
+
+            } 
+            else {
+                $_SESSION['erro'] = "Informe todos os campos obrigatórios";
+            }  
+        }
+    
+
+   
 
     public function logout() {
         if ($this->estaLogado()) {

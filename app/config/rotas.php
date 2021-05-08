@@ -47,11 +47,11 @@ $rotas["produtos"] = array(
     "controller"=>"App\\Controllers\\Paginas", 
     "metodo"=>"produtos"
 );
-// $rotas["cadastrar"] = array(
-//     "rota"=>"/cadastrar", 
-//     "controller"=>"App\\Controllers\\Autenticacao", 
-//     "metodo"=>"cadastrar"
-// );
+$rotas["cadastrar"] = array(
+    "rota"=>"/cadastrar", 
+    "controller"=>"App\\Controllers\\Autenticacao", 
+    "metodo"=>"cadastrar"
+);
 $rotas["entrar"] = array(
     "rota"=>"/entrar", 
     "controller"=>"App\\Controllers\\Autenticacao", 

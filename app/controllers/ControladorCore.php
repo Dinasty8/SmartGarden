@@ -5,9 +5,9 @@ class ControladorCore {
 
     private $dadosView = array();
     private $limiteOciosidade = 10; // segundos
-
     public function __construct() {
         $this->verificarOciosidade();
+        
     }
 
     protected function carregarPagina($nomeView) {
