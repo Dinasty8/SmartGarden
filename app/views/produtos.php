@@ -3,7 +3,7 @@
   <div class="container text-center">
     <div class="box">
       <div class="container">
-        <h3 class="Fazend">Fazenda Ordem Kinkou</h3>
+        <h3 class="fazend">Fazenda Ordem Kinkou</h3>
         
         <div class="button-add">
           <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Adicionar</a>
