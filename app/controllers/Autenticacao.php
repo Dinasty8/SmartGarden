@@ -26,7 +26,7 @@ class Autenticacao extends ControladorCore {
 
                     $this->logarUsuario($usuarioObj);
 
-                    header("Location:".BASE_URL."/produtos");
+                    header("Location:".BASE_URL."/irrigacao");
                     return; // Cancela a execução do restante do método. Irá previnir que o header fora dos IFs seja executado.
 
                 } else {
